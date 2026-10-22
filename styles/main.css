@@ -1,0 +1,43 @@
+
+body { 
+    /* body selector, set base text background and font defaults for the rest of the site */
+}
+
+h1, h2, h3 {
+    /* Shared heading styles and line-height */
+}
+
+p{
+    /* Paragraph text spacing and readability defaults */
+}
+
+
+/* combinators on the type selectors */
+  
+nav a {
+    /* Navigation links styled differently from body links */
+}
+
+footer p {
+    /* Small footer text */
+}
+
+
+
+.site-footer {
+    /* Footer layout and padding wrapper */
+}
+
+
+
+
+/*  Interactive states*/
+nav a:hover,
+.button:hover {
+    /* Mouse hover feedback and color changes */
+}
+
+nav a:focus-visible,
+.button:focus-visible {
+    /* High-visibility focus indicators for keyboard navigation */
+}
