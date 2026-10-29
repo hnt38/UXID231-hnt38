@@ -1,47 +1,72 @@
+/* (:root)*/
+:root {
+  --color-bg: #121216;
+  --color-surface: #1e1e24;
+  --color-text: #f0f0f5;
+  --color-muted: #a0a0b0;
+  --color-brand: #7b5ea7;
+  --color-brand-hover: #9370db;
+  --color-link: #8a2be2;
+  --color-link-hover: #ba55d3;
+  --color-focus: #00e5ff;
+}
 
+/*  Type selectors */
 body {
+    /* Base font, background color, and text color */
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: system-ui, -apple-system, sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    color: #222;
-    background-color: #fff;
 }
 
 h1, h2, h3 {
-    /* Shared heading styles and line-height */
+    /* Shared heading styles  */
+    color: var(--color-text);
 }
 
-p{
-    /* Paragraph text spacing and readability defaults */
+p {
+    /* Paragraph text spacing */
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-link);
 }
 
 
-/* combinators on the type selectors */
-  
+/* Combinators on type selectors*/
 nav a {
     /* Navigation links styled differently from body links */
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 footer p {
     /* Small footer text */
+    color: var(--color-muted);
 }
 
 
 
 .site-footer {
     /* Footer layout and padding wrapper */
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-brand);
 }
 
 
-
-
-/*  Interactive states*/
+/*Interactive states */
 nav a:hover,
 .button:hover {
     /* Mouse hover feedback and color changes */
+    color: var(--color-link-hover);
+    background-color: var(--color-surface);
 }
 
 nav a:focus-visible,
 .button:focus-visible {
     /* High-visibility focus indicators for keyboard navigation */
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
 }
