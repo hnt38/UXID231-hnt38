@@ -10,7 +10,7 @@
   --color-link-hover: #ba55d3;
   --color-focus: #00e5ff;
 }
-
+/* I used google gemini color palette for the colors in this project. I also used it to help figure out the format structure for the root and check the usability of the format */
 /*  Type selectors */
 body {
     /* add base font to here and  background color, and text color */
@@ -55,7 +55,7 @@ footer p {
 }
 
 
-/*Interactive states */
+/*Interactive states, I also used google gemini to help with the format for the interactive color starts for the webstite */
 nav a:hover,
 .button:hover {
     /* Mouse hover feedback and color changes */
