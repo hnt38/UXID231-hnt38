@@ -51,7 +51,11 @@ p {
 a {
     color: var(--color-link);
 }
-
+ img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Combinators on type selectors*/
 nav a {
