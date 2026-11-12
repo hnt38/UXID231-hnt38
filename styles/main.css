@@ -1,5 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+/* info  box */ 
+
+*{ 
+    box-sizing: border-box;
+} 
+
 
 /* (:root)*/
 :root {  
@@ -97,29 +103,16 @@ nav a:focus-visible,
 
 /* Member layout and spacing */
 
-/* Container for all member cards */
-#members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 3rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Individual member card styling */
-
 #members {
   max-width: 800px;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 2rem 1.5rem;
   text-align: center;
 }
 
 .member {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem; 
+  margin-right: 1rem;
 }
 
 .member img {
@@ -127,4 +120,12 @@ nav a:focus-visible,
   height: 100px;
   object-fit: cover;
   margin: 0 auto 1rem auto;
+} 
+
+.info-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-brand); 
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
 }
