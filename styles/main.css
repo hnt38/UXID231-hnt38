@@ -110,50 +110,21 @@ nav a:focus-visible,
 }
 
 /* Individual member card styling */
-.member {
-  background-color: var(--color-surface);
-  border: 1px solid rgba(123, 94, 167, 0.3); /* subtle brand accent border */
-  border-radius: 12px;
-  padding: 2rem;
-  width: 280px;
+
+#members {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-/* Hover effect for the cards */
-.member:hover {
-  transform: translateY(-5px);
-  border-color: var(--color-brand);
+.member {
+  margin-bottom: 2.5rem;
 }
 
-/* Member profile picture */
 .member img {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 1.25rem auto;
-  border: 3px solid var(--color-brand);
-}
-
-/* Member name heading */
-.member h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-text);
-}
-
-/* Member role and bio text */
-.member p {
-  font-size: 0.95rem;
-  color: var(--color-muted);
-  margin-bottom: 0.75rem;
-  line-height: 1.4;
-}
-
-/* Make the Role line stand out slightly */
-.member p:first-of-type {
-  font-weight: 500;
-  color: var(--color-brand-hover);
+  margin: 0 auto 1rem auto;
 }
