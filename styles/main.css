@@ -96,19 +96,12 @@ nav a:hover,
 
 nav a:focus-visible,
 .button:focus-visible {
-    /* High-visibility focus indicators for keyboard navigation */
+    /* add indicators for easy navigation */
     outline: 3px solid var(--color-focus);
     outline-offset: 3px;
 }  
 
 /* Member layout and spacing */
-
-#members {
-  max-width: 800px;
-  margin-inline: auto;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
 
 .member {
   margin-bottom: 2.5rem; 
@@ -119,10 +112,25 @@ nav a:focus-visible,
   width: 100px;
   height: 100px;
   object-fit: cover;
-  margin: 0 auto 1rem auto;
 } 
 
 .info-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-brand); 
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+} 
+
+.concept-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-brand); 
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+} 
+
+.contact-box {
   background-color: var(--color-surface);
   border: 1px solid var(--color-brand); 
   border-radius: 8px;
